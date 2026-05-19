@@ -12,6 +12,11 @@ cask "fluxion" do
   app "Fluxion.app"
 
   preflight do
+    system_command "/bin/launchctl",
+                   args:         ["bootout", "gui/#{Process.uid}/io.fluxion.local"],
+                   must_succeed: false
+    system_command "/bin/rm",
+                   args: ["-f", "#{Dir.home}/Library/LaunchAgents/io.fluxion.local.plist"]
     system_command "/bin/rm",
                    args: ["-rf", "#{appdir}/Fluxion.app"]
   end
