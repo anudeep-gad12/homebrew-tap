@@ -15,3 +15,5 @@ The cask replaces any existing `/Applications/Fluxion.app` bundle and clears mac
 ```bash
 brew install --cask anudeep-gad12/tap/spotify-tray
 ```
+
+The cask replaces existing `/Applications/SpotifyTray.app` and `~/Applications/SpotifyTray.app` bundles and clears macOS quarantine after install.
