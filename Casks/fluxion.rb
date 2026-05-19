@@ -7,7 +7,18 @@ cask "fluxion" do
   desc "Local coding agent for the models you choose"
   homepage "https://github.com/anudeep-gad12/Fluxion"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Fluxion.app"
+
+  preflight do
+    system_command "/bin/rm",
+                   args: ["-rf", "#{appdir}/Fluxion.app"]
+  end
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/Fluxion.app"],
+                   must_succeed: false
+  end
 end

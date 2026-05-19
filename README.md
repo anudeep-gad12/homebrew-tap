@@ -8,6 +8,8 @@ Homebrew tap for Anudeep's tools.
 brew install --cask anudeep-gad12/tap/fluxion
 ```
 
+The cask replaces any existing `/Applications/Fluxion.app` bundle and clears macOS quarantine after install.
+
 ## SpotifyTray
 
 ```bash
