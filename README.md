@@ -7,3 +7,9 @@ Homebrew tap for Anudeep's tools.
 ```bash
 brew install --cask anudeep-gad12/tap/fluxion
 ```
+
+## SpotifyTray
+
+```bash
+brew install --cask anudeep-gad12/tap/spotify-tray
+```
