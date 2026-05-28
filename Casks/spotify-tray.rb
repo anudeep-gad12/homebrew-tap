@@ -15,12 +15,6 @@ cask "spotify-tray" do
                    must_succeed: false
   end
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/SpotifyTray.app"],
-                   must_succeed: false
-  end
-
   app "SpotifyTray.app"
 
   uninstall quit: "app.spotifytray"
