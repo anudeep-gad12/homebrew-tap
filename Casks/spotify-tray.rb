@@ -1,6 +1,6 @@
 cask "spotify-tray" do
-  version "0.3.9"
-  sha256 "024ea4d1d9c02cec9a2361ec08ce5bc041541209d96b9bd3b9f862ff4ff242cc"
+  version "0.3.10"
+  sha256 "ba2340fecbe246f4a4ff687a32970fb6514e4a613c2734cbed9dc8c954f02aa9"
 
   url "https://github.com/anudeep-gad12/spotify-tray/releases/download/v#{version}/SpotifyTray.app.zip"
   name "SpotifyTray"
