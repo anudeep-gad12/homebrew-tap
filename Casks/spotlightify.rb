@@ -1,6 +1,6 @@
 cask "spotlightify" do
-  version "0.2.0"
-  sha256 "b391a617417f1552fc067b81e340628c508ed318abfa8472b905398a817acca2"
+  version "0.4.0"
+  sha256 "1d45d28967943b6578d24c1f183c8674841bd3220548603efa268e514e53f6d3"
 
   url "https://github.com/anudeep-gad12/spotlightify/releases/download/v#{version}/Spotlightify.app.zip"
   name "Spotlightify"
