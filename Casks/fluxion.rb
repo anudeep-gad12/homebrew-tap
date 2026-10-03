@@ -1,6 +1,6 @@
 cask "fluxion" do
-  version "0.7.2"
-  sha256 "7d258c34eebda9f7b610bb5453c733bafa0d0c467b21859e1f0e59fbeebcb9fe"
+  version "0.8.0"
+  sha256 "304d978e8f46065680018c789c503f858419358b61d61e129f38f06b12e1612e"
 
   url "https://github.com/anudeep-gad12/fluxion-releases/releases/download/v#{version}/Fluxion-macos-arm64.zip"
   name "Fluxion"
@@ -10,6 +10,7 @@ cask "fluxion" do
   depends_on macos: :ventura
 
   app "Fluxion.app"
+  binary "#{appdir}/Fluxion.app/Contents/MacOS/fluxion-cli", target: "fluxion"
 
   preflight do
     system_command "/bin/launchctl",
