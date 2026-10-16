@@ -1,6 +1,6 @@
 cask "fluxion" do
-  version "0.10.2"
-  sha256 "cbe4b994fa7a83f681cbd37d041ec2ad437d91ed0b441b9d7683e9e726315f8d"
+  version "0.11.0"
+  sha256 "554d779f3b2ae74beaa83707e40cdc08e10b458b45593a3c56287d6593fc5949"
 
   url "https://github.com/anudeep-gad12/fluxion-releases/releases/download/v#{version}/Fluxion-macos-arm64.zip"
   name "Fluxion"
